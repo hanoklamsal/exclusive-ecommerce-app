@@ -3,6 +3,7 @@ import wishlist_icon from "../../assets/images/wishlist-icon.png";
 import cart_icon from "../../assets/images/cart-icon.png";
 import account_icon from "../../assets/images/account-icon.png";
 import "./header.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -10,7 +11,7 @@ function Header() {
       <h2>Exclusive</h2>
       <nav className="navigation-container">
         <li>
-          <a>Home</a>
+        <Link to={'/home'}>Home</Link>
         </li>
         <li>
           <a>About</a>
