@@ -1,0 +1,82 @@
+.product-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.product-item-container {
+  /* border: solid 1px #bbb; */
+  height: 300px;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  height: 200px;
+  width: 200px;
+  margin-bottom: 8px;
+  background-size: cover;
+  transition: all 0.5s;
+  /* border: solid 1.5px #db4444; */
+}
+
+.image-container:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  /* margin-bottom: 10px; */
+}
+
+.product-item-container img {
+  border: solid 1.5px #db4444;
+}
+
+.product_name {
+  font-size: 0.6em;
+  cursor: pointer;
+}
+
+.discounted-price {
+  color: #db4444;
+  font-size: 0.7em;
+}
+
+.original-price {
+  color: #7d8184;
+  font-size: 0.65em;
+  margin-left: 5px;
+  text-decoration: line-through;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons button {
+  /* margin:5px 10px 5px 10px; */
+  background-color: #db4444;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  animation: pulse 0.5s forwards;
+  animation-timing-function: linear;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
